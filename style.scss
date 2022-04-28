@@ -35,7 +35,7 @@ html {
     display: flex;
     padding: calc(min(0.5rem, 2vw));
     padding-left: 1rem;
-    background: rgba(24, 18, 55, 0.356);
+    background: #2d2d384f;
     position: fixed;
     width: 100%;
     #opt {
@@ -73,7 +73,7 @@ html {
           height: calc(min(22px, max(3vw, 17px)));
           fill: white;
           &:hover {
-            fill: rgba(255, 255, 255, 0.356);
+            fill: rgb(255, 225, 0);
           }
         }
       }
@@ -93,7 +93,7 @@ html {
 }
 
 #page-2 {
-  height: 100%;
+  height: 100vh;
   width: 100vw;
 }
 #footer {
