@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap");
 ::-webkit-scrollbar {
   display: none;
 }
@@ -55,7 +56,7 @@ li {
   list-style-type: none;
   font-size: calc(min(20px, max(3.3vw, 14px)));
   font-family: 'Bangers', cursive;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   text-shadow: 2px 2px 5px red;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,8 +136,8 @@ li {
       flex-wrap: wrap;
   color: yellow;
   position: relative;
-  font-size: 6vw;
-  font-family: 'Permanent Marker', cursive;
+  font-size: 10vw;
+  font-family: 'Caveat', cursive;
   text-shadow: 5px 5px 5px red;
 }
 
