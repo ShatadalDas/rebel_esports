@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap");
 ::-webkit-scrollbar {
   display: none;
 }
@@ -29,10 +30,12 @@ html {
   height: 100vh;
   width: 100vw;
   position: absolute;
-  background: rgba(0, 0, 0, 0.306);
+  background: rgba(0, 0, 0, 0.349);
+  z-index: 0;
 }
 
 #page-1 #nav {
+  z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,15 +48,14 @@ html {
 
 #page-1 #nav #opt {
   list-style-type: none;
+  font-size: calc(min(20px, max(3vw, 14px)));
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  gap: calc(min(2.5vw, 1.5rem));
-  font-size: calc(min(20px, max(3vw, 14px)));
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: calc(min(2.5vw, 1.5rem));
 }
 
 #page-1 #nav #opt li:nth-child(2) {
@@ -69,7 +71,7 @@ html {
   max-height: 3vw;
 }
 
-#page-1 #nav #opt li:hover {
+#page-1 #nav #opt li:not(li:nth-child(2)):hover {
   color: #ffe100;
 }
 
@@ -106,35 +108,38 @@ html {
   fill: rgba(255, 255, 255, 0.356);
 }
 
-li {
-  cursor: pointer;
-}
-
-@media (max-width: 700px) {
-  svg {
-    display: none;
-  }
+#page-1 #content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: relative;
+  font-size: 6vw;
+  font-family: "Nova Mono", monospace;
+  text-shadow: 5px 5px 5px black;
 }
 
 #page-2 {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
-  background: green;
 }
 
-#page-3 {
-  height: 100vh;
+#footer {
+  z-index: 1;
+  padding: 5px;
   width: 100vw;
-  background: blue;
-}
-
-footer {
   background: #4d4d4d;
-  position: relative;
-  top: 0;
+  display: none;
 }
 
-footer ul {
+#footer ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,8 +152,21 @@ footer ul {
           align-items: center;
 }
 
-footer svg {
+#footer ul svg {
   fill: white;
   height: calc(min(22px, max(3vw, 17px)));
+}
+
+@media (max-width: 700px) {
+  #contacts li svg {
+    display: none;
+  }
+  #footer {
+    display: block;
+  }
+}
+
+li {
+  cursor: pointer !important;
 }
 /*# sourceMappingURL=style.css.map */
