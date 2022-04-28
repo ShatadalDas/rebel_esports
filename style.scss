@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap');
 
 ::-webkit-scrollbar {
   display: none;
@@ -12,9 +14,11 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  // font-family: sans-serif;
 }
-
+li {
+  cursor: pointer;
+}
 
 #page-1 {
   height: 100vh;
@@ -40,14 +44,17 @@ html {
     width: 100%;
     #opt {
       list-style-type: none;
-      font-size: calc(min(20px, max(3vw, 14px)));
+      font-size: calc(min(20px, max(3.3vw, 14px)));
+      font-family: 'Bangers', cursive;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 5px rgb(255, 0, 0);
       display: flex;
       align-items: center;
       gap: calc(min(2.5vw, 1.5rem));
       li {
         &:nth-child(2) {
-          color: aqua;
-          box-shadow: 0 2px 0 aqua;
+          box-shadow: 0 2px 0 white;
+          text-shadow: 3px 3px 5px rgb(0, 0, 255);
         }
         img {
           z-index: 1;
@@ -72,8 +79,10 @@ html {
         svg {
           height: calc(min(22px, max(3vw, 17px)));
           fill: white;
+          filter: drop-shadow(2px 2px 5px rgb(255, 0, 0));
           &:hover {
-            fill: rgb(255, 225, 0);
+            fill: rgb(255, 242, 0);
+            filter: drop-shadow(2px 2px 5px rgb(0, 0, 0));
           }
         }
       }
@@ -85,11 +94,11 @@ html {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    color: white;
+    color: rgb(255, 255, 0);
     position: relative;
     font-size: 6vw;
-    font-family: "Nova Mono", monospace;
-    text-shadow: 5px 5px 5px black;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 5px 5px 5px rgb(255, 0, 0);    
   }
 }
 
@@ -101,9 +110,9 @@ html {
 }
 #footer {
   z-index: 1;
-  padding: 5px;
+  padding: 7px 0;
   width: 100vw;
-  background: rgb(77, 77, 77);
+  background: rgb(0, 17, 59);
   display: none;
   ul {
     list-style-type: none;
@@ -118,10 +127,10 @@ html {
 }
 
 #copyright{
-  text-align: center;
-  background: rgb(77, 77, 77);
+  text-align: center;  
+  background: rgb(0, 17, 59);
   color: white;
-  padding: 5px;
+  padding: 5px 0;
 }
 
 @media (max-width: 700px) {
@@ -136,11 +145,7 @@ pre {
   overflow-x: auto;
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
 
-li {
-  cursor: pointer !important;
-}

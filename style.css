@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
 ::-webkit-scrollbar {
   display: none;
 }
@@ -14,7 +16,10 @@ html {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: sans-serif;
+}
+
+li {
+  cursor: pointer;
 }
 
 #page-1 {
@@ -48,7 +53,10 @@ html {
 
 #page-1 #nav #opt {
   list-style-type: none;
-  font-size: calc(min(20px, max(3vw, 14px)));
+  font-size: calc(min(20px, max(3.3vw, 14px)));
+  font-family: 'Bangers', cursive;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,9 +67,9 @@ html {
 }
 
 #page-1 #nav #opt li:nth-child(2) {
-  color: aqua;
-  -webkit-box-shadow: 0 2px 0 aqua;
-          box-shadow: 0 2px 0 aqua;
+  -webkit-box-shadow: 0 2px 0 white;
+          box-shadow: 0 2px 0 white;
+  text-shadow: 3px 3px 5px blue;
 }
 
 #page-1 #nav #opt li img {
@@ -102,10 +110,14 @@ html {
 #page-1 #nav #contacts li svg {
   height: calc(min(22px, max(3vw, 17px)));
   fill: white;
+  -webkit-filter: drop-shadow(2px 2px 5px red);
+          filter: drop-shadow(2px 2px 5px red);
 }
 
 #page-1 #nav #contacts li svg:hover {
-  fill: #ffe100;
+  fill: #fff200;
+  -webkit-filter: drop-shadow(2px 2px 5px black);
+          filter: drop-shadow(2px 2px 5px black);
 }
 
 #page-1 #content {
@@ -121,11 +133,11 @@ html {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  color: white;
+  color: yellow;
   position: relative;
   font-size: 6vw;
-  font-family: "Nova Mono", monospace;
-  text-shadow: 5px 5px 5px black;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 5px 5px 5px red;
 }
 
 #page-2 {
@@ -137,9 +149,9 @@ html {
 
 #footer {
   z-index: 1;
-  padding: 5px;
+  padding: 7px 0;
   width: 100vw;
-  background: #4d4d4d;
+  background: #00113b;
   display: none;
 }
 
@@ -163,9 +175,9 @@ html {
 
 #copyright {
   text-align: center;
-  background: #4d4d4d;
+  background: #00113b;
   color: white;
-  padding: 5px;
+  padding: 5px 0;
 }
 
 @media (max-width: 700px) {
@@ -181,12 +193,7 @@ pre {
   overflow-x: auto;
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
-}
-
-li {
-  cursor: pointer !important;
 }
 /*# sourceMappingURL=style.css.map */
