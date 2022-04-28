@@ -22,12 +22,10 @@ html {
   color: white;
   &::before {
     content: "";
+    height: 100vh;
+    width: 100vw;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.24);
+    background: rgba(0, 0, 0, 0.306);
   }
   #nav {
     display: flex;
@@ -44,6 +42,10 @@ html {
       display: flex;
       align-items: center;
       li {
+        &:nth-child(2) {
+          color: aqua;
+          box-shadow: 0 2px 0 aqua;
+        }
         img {
           z-index: 1;
           min-height: 28px;
@@ -95,4 +97,23 @@ li {
   height: 100vh;
   width: 100vw;
   background: blue;
+}
+footer {
+  background: rgb(77, 77, 77);
+  position: relative;
+  top: 0;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li{
+    // height: 50px;
+  }
+  svg {
+    fill: rgb(255, 255, 255);
+    height: calc(min(22px, max(3vw, 17px)));
+  }
 }
