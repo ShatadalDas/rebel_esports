@@ -119,6 +119,8 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   color: white;
   position: relative;
   font-size: 6vw;
@@ -127,8 +129,10 @@ html {
 }
 
 #page-2 {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
+  padding: 20px;
+  line-height: clac(auto5px);
 }
 
 #footer {
@@ -157,6 +161,13 @@ html {
   height: calc(min(22px, max(3vw, 17px)));
 }
 
+#copyright {
+  text-align: center;
+  background: #4d4d4d;
+  color: white;
+  padding: 5px;
+}
+
 @media (max-width: 700px) {
   #contacts li svg {
     display: none;
@@ -164,6 +175,15 @@ html {
   #footer {
     display: block;
   }
+}
+
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }
 
 li {
