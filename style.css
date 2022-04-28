@@ -1,0 +1,126 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#page-1 {
+  height: 100vh;
+  width: 100vw;
+  background: url("Images/background.jpg") center no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#page-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.24);
+}
+
+#page-1 #nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: calc(min(0.5rem, 2vw));
+  padding-left: 1rem;
+  background: rgba(24, 18, 55, 0.356);
+  position: fixed;
+  width: 100%;
+}
+
+#page-1 #nav #opt {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: calc(min(2.5vw, 1.5rem));
+  font-size: calc(min(20px, max(3vw, 14px)));
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-1 #nav #opt li img {
+  z-index: 1;
+  min-height: 28px;
+  height: 2.7vw;
+  max-height: 3vw;
+}
+
+#page-1 #nav #opt li:hover {
+  color: #ffe100;
+}
+
+#page-1 #nav #contacts {
+  list-style-type: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-1 #nav #contacts li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-1 #nav #contacts li svg {
+  height: calc(min(22px, max(3vw, 17px)));
+  fill: white;
+}
+
+#page-1 #nav #contacts li svg:hover {
+  fill: rgba(255, 255, 255, 0.356);
+}
+
+li {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  svg {
+    display: none;
+  }
+}
+
+#page-2 {
+  height: 100vh;
+  width: 100vw;
+  background: green;
+}
+
+#page-3 {
+  height: 100vh;
+  width: 100vw;
+  background: blue;
+}
+/*# sourceMappingURL=style.css.map */
