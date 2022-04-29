@@ -2,17 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-
 
 $page2-bg: rgb(14, 13, 26);
-
-
 ::-webkit-scrollbar {
   display: none;
 }
 html {
   scrollbar-width: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 *,
 *::before,
@@ -25,15 +25,10 @@ li {
   cursor: pointer;
 }
 
-a, a:visited, a:active{
-  text-decoration: none;
-  color: inherit;
-}
-
 #page-1 {
   height: 100vh;
   width: 100vw;
-  background: url("Images/background.jpg") center no-repeat;
+  background: url("Images/bg-2.jpg") center no-repeat;
   background-size: cover;
   color: white;
   &::before {
@@ -62,7 +57,7 @@ a, a:visited, a:active{
       align-items: center;
       gap: calc(min(2.5vw, 1.5rem));
       li {
-        &:nth-child(2) {
+        &:nth-child(3) {
           box-shadow: 0 2px 0 white;
           text-shadow: 3px 3px 5px rgb(0, 0, 255);
         }
@@ -72,7 +67,7 @@ a, a:visited, a:active{
           height: 2.7vw;
           max-height: 3vw;
         }
-        &:not(li:nth-child(2)):hover {
+        &:not(li:nth-child(3)):hover {
           color: rgb(255, 225, 0);
         }
       }
@@ -106,48 +101,16 @@ a, a:visited, a:active{
     flex-wrap: wrap;
     color: rgb(255, 255, 0);
     position: relative;
-    font-size: 10vw;
+    font-size: 7vw;
     font-family: "Caveat", cursive;
     text-shadow: 5px 5px 5px rgb(255, 0, 0);
   }
 }
-
-#page-2 {
-  height: 100%;
-  width: 100vw;
-  padding: 70px 150px;
-  line-height: clac(auto + 5px);
-  display: flex;
-  justify-content: center;
-  background: $page2-bg;
-  img {
-    height: 45vw;
-    transform: translateX(-50px);
-    z-index: 0;
-  }
-  svg{
-    width: 85vw;
-    body{
-      position: absolute;
-      right: 0;
+#content{
+    padding: 10px;
+    pre{
+        margin-left: 25px;
     }
-  }
-  #content {
-    z-index: 1;
-    height: auto;
-    width: 85vw;
-    padding: 40px;
-    border-radius: 20px;
-    font-family: 'Ubuntu Mono', monospace;
-    background: rgba(56, 64, 80, 0.701);
-    font-size: calc(min(17px, max(3vw, 17px)));
-    line-height: 1.5;
-
-    pre {
-      color: rgb(232, 227, 227);
-      font-family: 'Ubuntu Mono', monospace;
-    }
-  }
 }
 #footer {
   z-index: 1;
@@ -174,9 +137,7 @@ a, a:visited, a:active{
   color: white;
   padding: 5px 0;
   font-size: calc(min(22px, max(3vw, 17px)));
-
 }
-
 
 @media (max-width: 700px) {
   #contacts li svg {
@@ -186,19 +147,10 @@ a, a:visited, a:active{
     display: block;
   }
 }
-@media (max-width: 1000px){
-  #page-2 {
-  padding: 70px 0;
-  img {
-    display: none;
-  }
-}
-}
 pre {
-  overflow-x: auto;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -o-pre-wrap;
-  word-wrap: break-word;
-}
-
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+  }
