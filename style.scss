@@ -25,9 +25,9 @@ li {
   cursor: pointer;
 }
 
-a, a:visited, a:active{
+a, a:visited, a:active, a:focus{
   text-decoration: none;
-  color: inherit;
+  color: #fff;
 }
 
 #page-1 {
