@@ -211,6 +211,7 @@ pre:not(h3) {
 h3 {
   font-size: calc(min(35px, max(3vw, 18px)));
   padding: 10px 0;
+  padding-top: 30px;
   color: #00f7ff;
   text-shadow: 3px 3px 5px #000000;
   margin: 10px;
