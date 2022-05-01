@@ -184,8 +184,13 @@
   </li>
   </ul>
       </div>
-        <div id="copyright">
-          &#169; copyright 2022 | All Rights Reserved
-        </div>
+      <div id="copyright">&#169; copyright <span id="date"></span> | All Rights Reserved</div>
+
+      <script>
+        let el = document.getElementById("date");
+        let v = new Date();
+        let date = v.getFullYear();
+        el.innerHTML = date;
+      </script>
   </body>
 </html>
