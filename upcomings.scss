@@ -106,11 +106,13 @@ li {
     text-shadow: 5px 5px 5px rgb(255, 0, 0);
   }
 }
-#content{
-    padding: 10px;
-    pre{
-        margin-left: 25px;
-    }
+#content {
+  padding: 10px;
+  background: rgb(14, 13, 26);
+  color: rgba(255, 255, 255, 0.943);
+  pre {
+    margin-left: 25px;
+  }
 }
 #footer {
   z-index: 1;
@@ -139,6 +141,44 @@ li {
   font-size: calc(min(22px, max(3vw, 17px)));
 }
 
+
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  font-size: 18px;
+  padding: 20px;
+}
+
+h3 {
+  font-size: calc(min(35px, max(3vw, 25px)));
+  padding: 10px;
+  color: rgb(255, 255, 0);
+  // -webkit-text-stroke: 0.5px rgb(255, 0, 0);
+  text-shadow: 5px 5px 10px rgb(253, 0, 0);
+  margin: 10px;
+}
+#banner {
+  display: grid;
+  justify-items: center;
+  padding: 30px 0;
+  img {
+    height: calc(min(450px, max(30vw, 200px)));
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px black;
+  }
+}
+
+#subP1, #myst {
+  padding-left: 40px;
+}
+
+#parent {
+  line-height: 2;
+}
+
 @media (max-width: 700px) {
   #contacts li svg {
     display: none;
@@ -147,10 +187,3 @@ li {
     display: block;
   }
 }
-pre {
-    overflow-x: auto;
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -o-pre-wrap;
-    word-wrap: break-word;
-  }
